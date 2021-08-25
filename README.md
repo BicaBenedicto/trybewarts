@@ -91,8 +91,8 @@ Você pode adicionar outros arquivos se julgar necessário. Qualquer dúvida, pr
 ## Data de entrega
 
 * Projeto em dupla.
-* Serão `X` dias de projeto.
-* Data de entrega para avaliação final do projeto: `DD/MM/YYYY - 14:00h`.
+* Sera `1` dia de projeto.
+* Data de entrega para avaliação final do projeto: `01/09/2021 - 14:00h`.
 
 # Instruções para entregar seu projeto
 
@@ -105,7 +105,7 @@ git checkout joao-silva-trybewarts
 ```
 
 1. Clone o repositório
-  * `git clone git@github.com:betrybe/sd-015-b-project-trybewarts.git`.
+  * `git clone git@github.com:betrybe/sd-015-b-project-trybewarts.git`
   * Entre na pasta do repositório que você acabou de clonar:
     * `cd sd-015-b-project-trybewarts`
 
