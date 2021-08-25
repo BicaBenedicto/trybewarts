@@ -40,3 +40,6 @@ main, #evaluation-form {
     display: flex;
 
 }
+.trybewarts-header-title{
+    align-self: center;
+}

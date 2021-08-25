@@ -10,6 +10,7 @@
 <body>
   <header class="header">
       <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="">
+      <h1 id="trybewarts-header-title">Trybewarts</h1>
       <form  class= 'trybewarts-login' action="">
           <input id="email"  type="text" name="email" placeholder="Email">
           <input id="password" name="password" type='text' placeholder="Senha">
@@ -28,19 +29,18 @@
           <input id='input-email' placeholder='Email' type='email'>
           <label for='house'>Casa: 
             <select id='house' type='Gitnória' value='Gitnória' name='house'>
-              <options id='gitnoria-house' text='Gitnória' value='Gitnória'></options>
-              <options id='reactpuff-house' text='Reactpuff' value='Reactpuff'></options>
-              <options id='corvinode-house' text='Corvinode' value='Corvinode'></options>
-              <options id='pytherina-house' text='Pytherina' value='Pytherina'></options>
+              <option id='gitnoria-house'  value='Gitnória'>Gitnória</option>
+              <option id='reactpuff-house' value='Reactpuff'>Reactpuff</option>
+              <option id='corvinode-house' value='Corvinode'>Corvinode</option>
+              <option id='pytherina-house' value='Pytherina'>Pytherina</option>
             </select>
           </label>
         </div>
         <div id='div-family-form'>
-          <label id='label-family' for=''>
+          <label id='label-family'>Qual sua família?</label>
             <input class='family-inputs' type='radio' name='family' value='Frontend'> Frontend Family
             <input class='family-inputs' type='radio' name='family' value='Backend'> Backend Family
             <input class='family-inputs' type='radio' name='family' value='FullStack'> FullStack Family
-          </label>
         </div>
         <div id='div-cont-learn'>
 
