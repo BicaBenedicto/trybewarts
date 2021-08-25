@@ -10,14 +10,41 @@
 <body>
   <header class="header">
       <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="">
+      <form  class= 'trybewarts-login' action="">
+          <input id="email"  type="text" name="email" placeholder="Email">
+          <input id="password" name="password" type='text' placeholder="Senha">
+          <button class="login-button">Entrar</button>
+      </form>
 
   </header>
   <main
-    <section>
+      <section id='section-evaluation-form'>
       <form id='evaluation-form'>
-        <input id='input-name' placeholder='Nome' type='text'>
-        <input id='input-lastname' placeholder='Sobrenome' type='text'>
-        <input id='input-email' placeholder='Email' type='email'>
+        <div id='div-name-form'>
+          <input id='input-name' placeholder='Nome' type='text'>
+          <input id='input-lastname' placeholder='Sobrenome' type='text'>
+        </div>
+        <div>
+          <input id='input-email' placeholder='Email' type='email'>
+          <label for='house'>Casa: 
+            <select id='house' type='Gitnória' value='Gitnória' name='house'>
+              <options id='gitnoria-house' text='Gitnória' value='Gitnória'></options>
+              <options id='reactpuff-house' text='Reactpuff' value='Reactpuff'></options>
+              <options id='corvinode-house' text='Corvinode' value='Corvinode'></options>
+              <options id='pytherina-house' text='Pytherina' value='Pytherina'></options>
+            </select>
+          </label>
+        </div>
+        <div id='div-family-form'>
+          <label id='label-family' for=''>
+            <input class='family-inputs' type='radio' name='family' value='Frontend'> Frontend Family
+            <input class='family-inputs' type='radio' name='family' value='Backend'> Backend Family
+            <input class='family-inputs' type='radio' name='family' value='FullStack'> FullStack Family
+          </label>
+        </div>
+        <div id='div-cont-learn'>
+
+        </div>
       </form>
     </section>
     <aside>
