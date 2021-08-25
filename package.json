@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/betrybe/sd-0x-project-trybewarts-rubric#readme",
   "devDependencies": {
+    "@david-boydell/cypress-layout": "0.0.2",
     "@types/cypress": "1.1.3",
     "cypress": "6.8.0",
     "cypress-layout-inspector": "1.5.0",
