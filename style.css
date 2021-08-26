@@ -1,9 +1,9 @@
 body {
-  margin: 0px;
+  margin: 0;
 }
 
 main , #evaluation-form {
-  align-items:stretch;
+  align-items: stretch;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -12,7 +12,7 @@ main , #evaluation-form {
 
 #evaluation-form {
   flex-direction: column;
-  width: 675px
+  width: 675px;
 }
 
 #trybewarts-forms-logo {
