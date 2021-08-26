@@ -71,3 +71,7 @@ main , #evaluation-form {
   display: block;
   width: 80px;
 }
+
+#counter {
+  display: inline-block;
+}
