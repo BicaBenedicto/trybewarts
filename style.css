@@ -48,6 +48,10 @@ main , #evaluation-form {
   align-self: center;
 }
 
+#counter {
+  display: inline-block;
+}
+
 .family-inputs-divs {
   display: block;
   margin: 7px auto;
@@ -70,10 +74,6 @@ main , #evaluation-form {
 .trybewarts-header-logo {
   display: block;
   width: 80px;
-}
-
-#counter {
-  display: inline-block;
 }
 
 .hide {

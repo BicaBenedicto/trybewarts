@@ -11,7 +11,7 @@ const inputEmail = document.body.querySelector('#email');
 const inputPassword = document.body.querySelector('#password');
 const agreement = document.getElementById('agreement');
 const buttonSubmitForm = document.getElementById('submit-btn');
-
+const valorMaximo = 500;
 const text = document.getElementById('textarea');
 const counter = document.getElementById('counter');
 
@@ -35,7 +35,7 @@ function changeDisabledButton() {
 agreement.addEventListener('click', changeDisabledButton);
 
 text.addEventListener('keyup', () => {
-  const inputLength = text.value.length;
+  const inputLength = valorMaximo - text.value.length;
   counter.innerText = inputLength;
 });
 
