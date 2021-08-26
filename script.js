@@ -44,13 +44,14 @@ agreement.addEventListener('click', changeDisabledButton);
 
 // 4- retornar o número de caracteres restantes
 
-function showFormReply(value1, value2) {
-  const replyFormItems = document.getElementsByClassName('reply-form-item');
+function createFormReply(value1, value2) {
+  const p = document.createElement('p');
+  const form = document.getElementById('evaluation-form');
 
-  for (let index = 0; index < replyFormItems.length; index += 1) {
-    if (replyFormItems[index].innerText.includes(value1)) {
-      replyFormItems[index].innerText = value1 + value2;
-    }
+  if (value1) {
+    p.classList.add('reply-form-item');
+    p.innerText = value1 + value2;
+    form.appendChild(p);
   }
 }
 
@@ -58,10 +59,10 @@ function checkInputChecked(value1, value2) {
   const output = [];
   for (let index = 0; index < value1.length; index += 1) {
     if (value1[index].checked) {
-      output.push(value1[index].value);
+      output.push(` ${value1[index].value}`);
     }
   }
-  showFormReply(value2, output);
+  createFormReply(value2, output);
 }
 
 function replyForm() {
@@ -70,7 +71,7 @@ function replyForm() {
     'Email: ': inputEmailForm.value,
     'Casa: ': house.value,
     'Família: ': family,
-    'Matérias: ': matery,
+    'Matérias:': matery,
     'Avaliação: ': rate,
     'Observações: ': obs.value,
   };
@@ -78,14 +79,24 @@ function replyForm() {
   const value = Object.values(formReply);
   for (let index = 0; index < key.length; index += 1) {
     if (typeof value[index] === 'string') {
-      showFormReply(key[index], value[index]);
+      createFormReply(key[index], value[index]);
     } else {
       checkInputChecked(value[index], key[index]);
     }
   }
 }
 
+function hideFormInput() {
+  const divForm = document.getElementsByClassName('div-form');
+
+  for (let index = 0; index < divForm.length; index += 1) {
+    divForm[index].classList.add('hide');
+  }
+}
+
 function buttonSubmitForms(event) {
+  hideFormInput();
+  createFormReply();
   replyForm();
   event.preventDefault();
 }
