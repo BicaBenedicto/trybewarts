@@ -11,8 +11,9 @@ const inputEmail = document.body.querySelector('#email');
 const inputPassword = document.body.querySelector('#password');
 const agreement = document.getElementById('agreement');
 const buttonSubmitForm = document.getElementById('submit-btn');
-// const counter = document.getElementById('counter');
-// const textarea = document.getElementById('textarea');
+const valorMaximo = 500;
+const text = document.getElementById('textarea');
+const counter = document.getElementById('counter');
 
 loginButton.addEventListener('click', () => {
   if (
@@ -33,16 +34,10 @@ function changeDisabledButton() {
 
 agreement.addEventListener('click', changeDisabledButton);
 
-// 1- pegar o numero de caracteres do text area
-// console.log(textarea);
-// console.log(textarea.lenght);
-// console.log(counter);
-
-// 2- criar uma função contadora
-
-// 3- essa função subtrair o numero de caracteres já utilizados de 500
-
-// 4- retornar o número de caracteres restantes
+text.addEventListener('keyup', () => {
+  const inputLength = valorMaximo - text.value.length;
+  counter.innerText = inputLength;
+});
 
 function createFormReply(value1, value2) {
   const p = document.createElement('p');

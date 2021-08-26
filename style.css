@@ -88,6 +88,10 @@ footer {
   margin-top: 5px;
 }
 
+#counter {
+  display: inline-block;
+}
+
 .family-inputs-divs {
   display: block;
   margin: 10px auto;
