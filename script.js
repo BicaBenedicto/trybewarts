@@ -55,11 +55,13 @@ function showFormReply(value1, value2) {
 }
 
 function checkInputChecked(value1, value2) {
+  const output = [];
   for (let index = 0; index < value1.length; index += 1) {
     if (value1[index].checked) {
-      showFormReply(value2, value1[index].value);
+      output.push(value1[index].value);
     }
   }
+  showFormReply(value2, output);
 }
 
 function replyForm() {
@@ -75,7 +77,7 @@ function replyForm() {
   const key = Object.keys(formReply);
   const value = Object.values(formReply);
   for (let index = 0; index < key.length; index += 1) {
-    if (typeof key[index] === 'string') {
+    if (typeof value[index] === 'string') {
       showFormReply(key[index], value[index]);
     } else {
       checkInputChecked(value[index], key[index]);
