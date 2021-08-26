@@ -75,3 +75,7 @@ main , #evaluation-form {
 #counter {
   display: inline-block;
 }
+
+.hide {
+  display: none;
+}
