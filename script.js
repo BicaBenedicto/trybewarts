@@ -97,3 +97,7 @@ function buttonSubmitForms(event) {
 }
 
 buttonSubmitForm.addEventListener('click', buttonSubmitForms);
+
+const [buttonBackToPortfolio] = document.getElementsByClassName('button-back-to-home');
+
+buttonBackToPortfolio.addEventListener('click', () => window.location.href='https://bicabenedicto.github.io/');
