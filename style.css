@@ -24,10 +24,11 @@ main , #evaluation-form {
 button {
   border: 0;
   border-radius: 100%;
-  background-color: rgb(50, 167, 145);
+  background-color: rgb(197, 31, 31);
   color: white;
   text-shadow: 2px 2px 2px black;
   margin-left: 10px;
+  padding: 10px;
 }
 
 button:hover {
@@ -100,9 +101,9 @@ footer {
 .header {
   align-content: center;
   align-items: center;
-  box-shadow: 0 5px 5px rgba(139, 255, 234, 0.616);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.582);
   display: flex;
-  background-color: rgb(50, 167, 145);
+  background-color: rgb(22, 22, 22);
   justify-content: space-between;
   height: 100px;
   padding: 10px 20px;
@@ -130,7 +131,7 @@ footer {
 }
 
 .inputText:hover , #house:hover {
-  border: 3px solid rgb(50, 167, 145);
+  border: 3px solid rgb(197, 31, 31);
 }
 
 .inputText:active , #house:active {
@@ -144,7 +145,7 @@ footer {
 }
 
 .textarea:hover {
-  border: 3px solid rgb(50, 167, 145);
+  border: 3px solid rgb(197, 31, 31);
 }
 
 .textarea:active {
