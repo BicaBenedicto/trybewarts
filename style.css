@@ -161,43 +161,43 @@ footer {
 }
 
 .button-back-to-home {
-  background-color: #6b63ff;
-  border: none;
-  border-radius: 100%;
-  color: white;
-  filter: opacity(0.5);
-  font-size: 20px;
-  font-weight: 700;
-  left: 50px;
-  padding: 10px 15px;
-  position: fixed;
-  overflow-x: hidden;
-  top: 50px;
-  width: 50px;
-  z-index: 20000;
+  background-color: #6b63ff !important;
+  border: none!important;
+  border-radius: 100%!important;
+  color: white!important;
+  filter: opacity(0.5)!important;
+  font-size: 20px!important;
+  font-weight: 700!important;
+  left: 50px!important;
+  padding: 10px 15px!important;
+  position: fixed!important;
+  overflow-x: hidden!important;
+  top: 50px!important;
+  width: 50px!important;
+  z-index: 20000!important;
 }
 
 .button-back-to-home:hover {
-  border-radius: 20px;
-  filter: opacity(1);
-  width: 300px;
+  border-radius: 20px!important;
+  filter: opacity(1)!important;
+  width: 300px!important;
 }
 
 .button-back-to-home::before {
-  content: '<';
+  content: '<'!important;
 }
 
 .button-back-to-home:hover::before {
-  content: '';
+  content: ''!important;
 }
 
 .button-back-to-home:hover::after {
-  content: 'Voltar para portfolio';
+  content: 'Voltar para portfolio'!important;
 }
 
 @media  only screen and (max-width: 400px) {
   .button-back-to-home {
-    left: 10px;
-    top: 10px;
+    left: 10px!important;
+    top: 10px!important;
   }
 }
