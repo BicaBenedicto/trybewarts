@@ -4,7 +4,11 @@
 
 O projeto é um site de cadastro, onde você coloca as informações como nome, escola, tecnologias que deseja aprender, entre outras coisas e ao final é impresso uma carta com as informações.
 
-### Técnologias usadas:
+### Demonstração
+
+![Desktop](./trybewarts.png)
+
+### Tecnologias usadas:
 
 Front-end:
 
